@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html id="htmlRoot">
+<head>
+  <title>Rene Torres's Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="topnav" id="topnav">
+    <div class="topnav-sections">
+      <a class="nav-link" href="#section-home">Home</a>
+      <a class="nav-link" href="#section-work">Work</a>
+      <a class="nav-link" href="#section-favs">Favs</a>
+      <a class="nav-link" href="#section-video">Video</a>
+      <a class="nav-link" href="#section-contact">Contact</a>
+      <a class="nav-link" href="#section-site">Site</a>
+      <a class="nav-link" href="#section-quote">Quote</a>
+      <a class="nav-link" href="#section-game">Game</a>
+    </div>
+    <label class="dark-toggle" title="Toggle dark / light mode">
+      <span class="toggle-icon">☀️</span>
+      <input type="checkbox" id="darkModeSwitch" onchange="toggleDark(this)">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-icon">🌙</span>
+    </label>
+  </nav>
+
+  <!-- Floating next-section arrow -->
+  <button class="next-arrow" id="nextArrow" title="Next section" onclick="goNextSection()">▼</button>
+
+  <!-- ===== SECTIONS ===== -->
+  <section id="section-home">
+  <h1 class="page-title">Rene Torres's Webpage</h1>
+
+  <!--Three photos in a horizontal row.
+      The middle one is NOT actually me—see the caption below.
+      Lesson for class: alt text should always be honest about what an image is.-->
+  <div class="photo-row">
+    <img class="row-photo"
+         alt="Rene smiling standing in front of a McCombs banner at a case competition for PWC.(horns up)"
+         src="Case Comp.jpg" />
+    <img class="row-photo"
+         alt="A photo that is a Doberman (species of dog) sitting in the grass with his tounge out"
+         src="Rene's Dog.jpg" />
+  </div>
+  <p class="caption">
+    <em>Rene Torres and Rene's Dog.
+    Lesson: A dog is a man's bestfriend&mdash;Hook 'em !</em>
+  </p>
+
+  <!--This is the About Me paragraph-->
+  <p class="about-me">
+    Hi! I'm Rene Torres, and I go to the University of Texas at Austin studying at the McCombs
+    School of Business. My focus is in majoring in Finance, hoping in landing IB and later on PE
+    When I'm not at a school, you can usually find me playing soccer at Clark Field/ Whitaker
+	field or working there.
+	Hook 'em!
+  </p>
+
+  </section><!-- /section-home -->
+
+  <hr />
+
+  <section id="section-work">
+  <!--Work experience as a bulleted list-->
+  <h3>My Work Experience</h3>
+  <ul>
+    <li><strong>Recreational Sports Complex</strong> &mdash; Facility Assistant (2025 &ndash; Present)</li>
+    <li><strong>Rock 'Em</strong> &mdash; Sales Representative (2024 &ndash; present)</li>
+    <li><strong>Allen Masonory Corp.</strong> &mdash; Brick worker (2011 &ndash; 2023)</li>
+  </ul>
+
+  </section><!-- /section-work -->
+
+  <hr />
+
+  <section id="section-favs">
+  <!--My Favorite Things: a bulleted list of links-->
+  <h3>My Favorite Things</h3>
+  <ul>
+    <li><a href="https://www.bing.com/images/search?view=detailV2&ccid=PlSep9SK&id=72BB9CBE059087DB65E6B2173A4BB0722DF28605&thid=OIP.PlSep9SKWcHCuZAoNDZ08gHaE8&mediaurl=https%3A%2F%2Fgetfootballnewsspain.com%2Fwp-content%2Fuploads%2F2024%2F12%2Freal-madrid-cf-v-paris-fc-group-d-uefa-womens-champions-league-2023-24-2-1170x780.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.3e549ea7d48a59c1c2b99028343674f2%3Frik%3DBYbyLXKwSzoXsg%26pid%3DImgRaw%26r%3D0&exph=780&expw=1170&q=real+madrid+&FORM=IRPRST&ck=15100A4F4CF694FD2B0CD3CAE4DA5ED8&selectedIndex=102&itb=0&cw=630&ch=667&ajaxhist=0&ajaxserp=0" target="_blank">Real Madrid</a> &mdash; The best soccer team in the world, Hala Madrid</li>
+    <li><a href="https://www.tasteofhome.com/recipes/best-strawberry-ice-cream/" target="_blank">Strawberry ice cream</a> &mdash; My favorite ice cream flavoring, really good for shakes too</li>
+    <li><a href="https://www.bing.com/images/search?view=detailV2&ccid=oBPIOYNc&id=4E49E34F4475748A6B55521CFDD916BC406B1746&thid=OIP.oBPIOYNcU4cwQ0ELI0WpAwHaE7&mediaurl=https%3a%2f%2fwww.dobermanplanet.com%2fwp-content%2fuploads%2f2019%2f01%2fBlack-and-Rust-Large.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.a013c839835c53873043410b2345a903%3frik%3dRhdrQLwW2f0cUg%26pid%3dImgRaw%26r%3d0&exph=633&expw=950&q=doberman&mode=overlay&FORM=IQFRBA&ck=0B6FFBE13B3D79B8AD21C93B2B93B931&selectedIndex=0&idpp=serp&ajaxhist=0&ajaxserp=0" target="_blank">I love my Doberman</li>
+  </ul>
+
+  </section><!-- /section-favs -->
+
+  <hr />
+
+  <section id="section-video">
+  <!--YouTube videos-->
+  <h3>Funny Video</h3>
+
+  <div class="video-grid">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/weiPtlbFQGY?si=SP3YK_Qb0CGfDU95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+
+  </section><!-- /section-video -->
+
+  <hr />
+
+  <section id="section-contact">
+  <!--Contact section-->
+  <h3>Contact Me</h3>
+  <p class="contact-line">
+    <a href="mailto:Rene923Torres@icloud.com">Rene923Torres@icloud.com</a>
+    &nbsp;|&nbsp;
+    <a href="http://www.linkedin.com/in/renetorrescruz" target="_blank">My LinkedIn Profile</a>
+  </p>
+
+  </section><!-- /section-contact -->
+
+  <hr />
+
+  <section id="section-site">
+  <!-- ===== WEBSITE LINK SLIDE ===== -->
+  <div class="website-slide">
+    <div class="website-slide-inner">
+      <span class="website-slide-label">🌐 Check Out My Site</span>
+      <a class="website-slide-link" href="http://www.linkedin.com/in/renetorrescruz" target="_blank">
+        linkedin.com/in/renetorrescruz
+        <span class="website-slide-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  </section><!-- /section-site -->
+
+  <hr />
+
+  <section id="section-quote">
+  <!-- ===== MOTIVATIONAL QUOTE ===== -->
+  <h3>Daily Motivation</h3>
+  <div class="quote-card">
+    <p class="quote-text" id="quoteText">"The secret of getting ahead is getting started."</p>
+    <p class="quote-author" id="quoteAuthor">— Mark Twain</p>
+    <button class="dice-btn" id="diceBtn" title="Roll for a new quote" onclick="rollQuote()">🎲</button>
+  </div>
+
+  </section><!-- /section-quote -->
+
+  <hr />
+
+  <section id="section-game">
+  <!-- ===== MINESWEEPER ===== -->
+  <h3>Minesweeper Break</h3>
+  <div class="minesweeper-wrapper">
+    <div class="ms-header">
+      <span id="ms-mine-count">💣 <span id="mineCountDisplay">10</span></span>
+      <button class="ms-reset-btn" onclick="initMinesweeper()">🔄 New Game</button>
+      <span id="ms-timer">⏱ <span id="timerDisplay">0</span>s</span>
+    </div>
+    <div class="ms-board" id="msBoard"></div>
+    <p class="ms-hint">Left-click to reveal · Right-click to flag</p>
+  </div>
+
+  <script>
+  /* ---- MOTIVATIONAL QUOTES ---- */
+  const quotes = [
+    { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+    { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+    { text: "Don't watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+    { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+    { text: "Hard work beats talent when talent doesn't work hard.", author: "Tim Notke" },
+    { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+    { text: "Act as if what you do makes a difference. It does.", author: "William James" },
+    { text: "What you get by achieving your goals is not as important as what you become.", author: "Thoreau" },
+    { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
+    { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" },
+    { text: "Great things never come from comfort zones.", author: "Unknown" },
+    { text: "Dream it. Wish it. Do it.", author: "Unknown" },
+    { text: "Success doesn't just find you. You have to go out and get it.", author: "Unknown" },
+    { text: "Wake up with determination. Go to bed with satisfaction.", author: "Unknown" },
+    { text: "Little things make big days.", author: "Unknown" },
+    { text: "It's going to be hard, but hard is not impossible.", author: "Unknown" },
+    { text: "Don't stop when you're tired. Stop when you're done.", author: "Unknown" },
+    { text: "Do something today that your future self will thank you for.", author: "Sean Patrick Flanery" },
+    { text: "Sometimes later becomes never. Do it now.", author: "Unknown" },
+    { text: "You are stronger than you think.", author: "Unknown" },
+    { text: "Difficult roads often lead to beautiful destinations.", author: "Unknown" },
+    { text: "Opportunities don't happen, you create them.", author: "Chris Grosser" },
+    { text: "Don't limit your challenges. Challenge your limits.", author: "Unknown" },
+    { text: "Work hard in silence, let success make the noise.", author: "Frank Ocean" },
+    { text: "The harder you work for something, the greater you'll feel when you achieve it.", author: "Unknown" },
+    { text: "Dream bigger. Do bigger.", author: "Unknown" },
+    { text: "The key to success is to focus on goals, not obstacles.", author: "Unknown" },
+    { text: "Strive for progress, not perfection.", author: "Unknown" },
+    { text: "You've got to get up every morning with determination if you're going to go to bed with satisfaction.", author: "George Lorimer" }
+  ];
+  let lastQuoteIdx = -1;
+  function rollQuote() {
+    const btn = document.getElementById('diceBtn');
+    btn.classList.add('spin');
+    setTimeout(() => btn.classList.remove('spin'), 400);
+    let idx;
+    do { idx = Math.floor(Math.random() * quotes.length); } while (idx === lastQuoteIdx);
+    lastQuoteIdx = idx;
+    const q = quotes[idx];
+    const qt = document.getElementById('quoteText');
+    const qa = document.getElementById('quoteAuthor');
+    qt.style.opacity = 0; qa.style.opacity = 0;
+    setTimeout(() => {
+      qt.textContent = `"${q.text}"`;
+      qa.textContent = `— ${q.author}`;
+      qt.style.opacity = 1; qa.style.opacity = 1;
+    }, 200);
+  }
+
+  /* ---- MINESWEEPER ---- */
+  const ROWS = 9, COLS = 9, MINES = 10;
+  let board, revealed, flagged, gameOver, firstClick, timerInterval, seconds;
+
+  function initMinesweeper() {
+    board = Array.from({length: ROWS}, () => Array(COLS).fill(0));
+    revealed = Array.from({length: ROWS}, () => Array(COLS).fill(false));
+    flagged = Array.from({length: ROWS}, () => Array(COLS).fill(false));
+    gameOver = false; firstClick = true; seconds = 0;
+    clearInterval(timerInterval);
+    document.getElementById('timerDisplay').textContent = '0';
+    document.getElementById('mineCountDisplay').textContent = MINES;
+    renderBoard();
+  }
+
+  function placeMines(safeR, safeC) {
+    let placed = 0;
+    while (placed < MINES) {
+      const r = Math.floor(Math.random() * ROWS);
+      const c = Math.floor(Math.random() * COLS);
+      if (board[r][c] === -1) continue;
+      if (Math.abs(r - safeR) <= 1 && Math.abs(c - safeC) <= 1) continue;
+      board[r][c] = -1; placed++;
+    }
+    for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+      if (board[r][c] === -1) continue;
+      let count = 0;
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+        const nr = r+dr, nc = c+dc;
+        if (nr>=0&&nr<ROWS&&nc>=0&&nc<COLS&&board[nr][nc]===-1) count++;
+      }
+      board[r][c] = count;
+    }
+  }
+
+  function renderBoard() {
+    const el = document.getElementById('msBoard');
+    el.innerHTML = '';
+    for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+      const cell = document.createElement('div');
+      cell.className = 'ms-cell';
+      cell.dataset.r = r; cell.dataset.c = c;
+      if (revealed[r][c]) {
+        cell.classList.add('revealed');
+        if (board[r][c] === -1) { cell.textContent = '💣'; cell.classList.add('mine'); }
+        else if (board[r][c] > 0) { cell.textContent = board[r][c]; cell.dataset.num = board[r][c]; }
+      } else if (flagged[r][c]) {
+        cell.textContent = '🚩'; cell.classList.add('flagged');
+      }
+      cell.addEventListener('click', () => handleClick(r, c));
+      cell.addEventListener('contextmenu', e => { e.preventDefault(); handleFlag(r, c); });
+      el.appendChild(cell);
+    }
+  }
+
+  function handleClick(r, c) {
+    if (gameOver || flagged[r][c] || revealed[r][c]) return;
+    if (firstClick) {
+      firstClick = false;
+      placeMines(r, c);
+      timerInterval = setInterval(() => {
+        seconds++;
+        document.getElementById('timerDisplay').textContent = seconds;
+      }, 1000);
+    }
+    if (board[r][c] === -1) {
+      revealed[r][c] = true;
+      gameOver = true;
+      clearInterval(timerInterval);
+      revealAll(); renderBoard();
+      setTimeout(() => alert('💥 Boom! Try again!'), 50);
+      return;
+    }
+    flood(r, c);
+    renderBoard();
+    checkWin();
+  }
+
+  function flood(r, c) {
+    if (r<0||r>=ROWS||c<0||c>=COLS||revealed[r][c]||flagged[r][c]) return;
+    revealed[r][c] = true;
+    if (board[r][c] === 0) {
+      for (let dr=-1;dr<=1;dr++) for (let dc=-1;dc<=1;dc++) flood(r+dr,c+dc);
+    }
+  }
+
+  function handleFlag(r, c) {
+    if (gameOver || revealed[r][c]) return;
+    flagged[r][c] = !flagged[r][c];
+    const flagCount = flagged.flat().filter(Boolean).length;
+    document.getElementById('mineCountDisplay').textContent = MINES - flagCount;
+    renderBoard();
+  }
+
+  function revealAll() {
+    for (let r=0;r<ROWS;r++) for (let c=0;c<COLS;c++) revealed[r][c] = true;
+  }
+
+  function checkWin() {
+    let unrevealed = 0;
+    for (let r=0;r<ROWS;r++) for (let c=0;c<COLS;c++) if (!revealed[r][c]) unrevealed++;
+    if (unrevealed === MINES) {
+      gameOver = true; clearInterval(timerInterval);
+      setTimeout(() => alert(`🎉 You win! Time: ${seconds}s — Hook 'em! 🤘`), 50);
+    }
+  }
+
+  initMinesweeper();
+
+  /* ---- DARK MODE ---- */
+  function toggleDark(cb) {
+    document.getElementById('htmlRoot').classList.toggle('dark', cb.checked);
+    localStorage.setItem('darkMode', cb.checked ? '1' : '0');
+  }
+  // Restore preference on load
+  if (localStorage.getItem('darkMode') === '1') {
+    document.getElementById('htmlRoot').classList.add('dark');
+    document.getElementById('darkModeSwitch').checked = true;
+  }
+
+  /* ---- NEXT SECTION ---- */
+  const sectionIds = [
+    'section-home','section-work','section-favs','section-video',
+    'section-contact','section-site','section-quote','section-game'
+  ];
+  function goNextSection() {
+    const scrollY = window.scrollY + window.innerHeight / 2;
+    let nextId = sectionIds[sectionIds.length - 1];
+    for (let i = 0; i < sectionIds.length; i++) {
+      const el = document.getElementById(sectionIds[i]);
+      if (el && el.getBoundingClientRect().top + window.scrollY > scrollY + 10) {
+        nextId = sectionIds[i];
+        break;
+      }
+    }
+    document.getElementById(nextId).scrollIntoView({ behavior: 'smooth' });
+  }
+  // Hide arrow on last section
+  window.addEventListener('scroll', () => {
+    const last = document.getElementById('section-game');
+    const arrow = document.getElementById('nextArrow');
+    if (!last || !arrow) return;
+    const rect = last.getBoundingClientRect();
+    arrow.style.opacity = rect.bottom <= window.innerHeight + 60 ? '0' : '1';
+  });
+  </script>
+
+  </section><!-- /section-game -->
+
+  <!--Footer with copyright-->
+  <footer class="page-footer">
+    Copyright &copy; 2026 Rene Torres. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
 
